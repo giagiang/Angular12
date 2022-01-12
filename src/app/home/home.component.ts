@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  public name = 'Lê Gia Giang';
+  public name = 'ricciardo';
+
+  public home = 'Sweet Home'
 
   constructor() { }
 

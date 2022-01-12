@@ -1,4 +1,9 @@
 <div class="test" >
     <h1>Day là component Home </h1>
     <h2> chào bạn {{name}} </h2>
+    <input value="{{name}}"/>
+    <br>
+    <input [value]= "name" title="ở đây là tên chủ nhà {{ name }}"/>
+    <br>
+    <input [value] = "home" [title]="'đây là tên ngôi nhà ' +  home "/>
 </div>
