@@ -11,6 +11,8 @@ export class HomeComponent implements OnInit {
 
   public home = 'Sweet Home'
 
+  public age = 16;
+
   constructor() { }
 
   ngOnInit(): void {

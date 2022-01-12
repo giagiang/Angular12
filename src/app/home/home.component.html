@@ -6,4 +6,7 @@
     <input [value]= "name" title="ở đây là tên chủ nhà {{ name }}"/>
     <br>
     <input [value] = "home" [title]="'đây là tên ngôi nhà ' +  home "/>
+
+    <h2 *ngIf = "age > 16" >bạn đã đủ tuổi sống tự lập rồi !</h2>
+    <h2 *ngIf = "age  <= 16" >bạn chưa đủ tuổi sống tự lập !</h2>
 </div>
