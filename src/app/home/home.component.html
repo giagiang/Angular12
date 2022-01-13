@@ -1,12 +1,17 @@
 <div class="test" >
-    <h1>Day là component Home </h1>
-    <h2> chào bạn {{name}} </h2>
-    <input value="{{name}}"/>
+    <h1>Đây là component Home </h1>
+    <!-- <h2> chào bạn {{name}} </h2> -->
+    <!-- <input value="{{name}}"/> -->
+    <br/>
+    <!-- <input [value]= "name" title="ở đây là tên chủ nhà {{ name }}"/>
     <br>
-    <input [value]= "name" title="ở đây là tên chủ nhà {{ name }}"/>
-    <br>
-    <input [value] = "home" [title]="'đây là tên ngôi nhà ' +  home "/>
-
-    <h2 *ngIf = "age > 16" >bạn đã đủ tuổi sống tự lập rồi !</h2>
-    <h2 *ngIf = "age  <= 16" >bạn chưa đủ tuổi sống tự lập !</h2>
+    <input [value] = "home" [title]="'đây là tên ngôi nhà ' +  home "/> -->
+    <input type="text" [(ngModel)]="age"/>
+    <h3> Tuổi bạn là {{ age }}</h3>
+    <!-- <h2 *ngIf = "age > 16" >bạn đã đủ tuổi sống tự lập rồi !</h2>
+    <h2 *ngIf = "age  <= 16" >bạn chưa đủ tuổi sống tự lập !</h2> -->
+    <div *ngIf = "age <= 18; then tre; else gia" ></div>
+    <ng-template #tre><h2> bạn còn trẻ !</h2></ng-template>
+    <ng-template #gia><h2> bạn đã già rồi!</h2></ng-template>
 </div>
+ 

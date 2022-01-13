@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
 
   public home = 'Sweet Home'
 
-  public age = 16;
+  public age = 18;
 
   constructor() { }
 
