@@ -2,5 +2,17 @@
     border: 1px solid;
     padding: 10px;
     box-shadow: 5px 10px pink;
-    width: 400px;
+    width: 700px;
+}
+.table, td, th{
+    border-collapse: collapse;
+    border: 1px solid black ;
+}
+ 
+td,th {
+    min-width: 120px;
+}
+
+.so-am{
+    color:red;
 }

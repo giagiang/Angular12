@@ -1,12 +1,29 @@
 <div class="test" >
     <h1>welcome to component home</h1>
     <p> thêm hàng thứ 2 </p>
-    <div *ngFor  = "let tinh of tinhThanh; let i = index">
-        <li>{{ i + 1 }}. {{tinh}}</li>
-    </div>
-    <br/>
-    <div *ngFor = "let trai of traiCay; let i = index">
-        <li>{{i + 1}}. {{trai}}</li>
-    </div>
+    <!-- <h1>Trai Cây</h1> -->
+    <!-- <div *ngFor = "let trai of traiCay ; let i = index">
+        <li>{{ i + 1}}. {{trai}}</li> -->
+    
+    <br/>   
+    
+    <table class="table">
+         <tr>
+             <th>No</th>
+             <th>Name</th>
+             <th>Giá</th>
+             <th>Đại Hạ Giá</th>
+         </tr>
+         <tr *ngFor = "let trai of traiCay2; let i = index">
+             <td>{{ i + 1 }}</td>
+             <td>{{trai.name}}</td>
+             <td class="right">
+                <span [ngClass]="{'so-am': trai.gia < 0 }">{{ trai.gia }}</span>
+             </td>
+             <td>
+                 <span *ngIf = "trai.haGia">DAI HA GIA??</span>
+             </td>
+         </tr>
+    </table>
 
 </div>

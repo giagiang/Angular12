@@ -8,13 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   public name = 'Ricciardo';
   public age = '20';
-  public tinhThanh = ['Thanh Hóa','Hà Nội','Thái Nguyên','Nghệ An','Đà Nẵng','Sài Gòn']
+  // public tinhThanh = ['Thanh Hóa','Hà Nội','Thái Nguyên','Nghệ An','Đà Nẵng','Sài Gòn']
   public traiCay = ['Thanh Long','Mít','Cam','Dưa Hấu','Mận']
+  public traiCay2 = [
+    {name: 'Thanh Long', gia: 12.333, haGia: true},
+    {name: 'Cam', gia: 35.222, haGia:false },
+  ];
+
 
   constructor() { }
 
   public  ngOnInit(): void {
-    console.log('tinhThanh=', this.tinhThanh);
+    console.log('traiCay=', this.traiCay);
   }
 
 }
