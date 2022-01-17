@@ -12,7 +12,8 @@ export class HomeComponent implements OnInit {
   public traiCay = ['Thanh Long','Mít','Cam','Dưa Hấu','Mận']
   public traiCay2 = [
     {name: 'Thanh Long', gia: 12.333, haGia: true},
-    {name: 'Cam', gia: 35.222, haGia:false },
+    {name: 'Cam', gia: 35.222, haGia: false },
+    {name : 'tao', gia: 21.023, haGia: true},
   ];
 
 
