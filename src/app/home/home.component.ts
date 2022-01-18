@@ -17,6 +17,7 @@ export class HomeComponent implements OnInit {
     { name: 'chanh', gia: 50.444, haGia: false },
 
   ];
+  
   public districts: string[] =[] ;
   public vietnamData = [
     {city : 'Chọn Thành Phố', district : ['Quận Huyện']},
@@ -54,6 +55,7 @@ export class HomeComponent implements OnInit {
     },
     {
       city: 'An Giang',
+      
       district: [
         'Thành phố Long Xuyên',
         'Thành phố Châu Đốc',
@@ -121,13 +123,27 @@ export class HomeComponent implements OnInit {
     }
 
 // cach1
-//     const search = this.vietnamData.filter(data => data.city === city);
-//     console.log('search', search);
-//     if (search && search.length > 0 ){
-//       this.districts = search[0].district; 
-//     }
+    // const citied = this.vietnamData.filter(data => data.city === city);
+    // console.log('search', citied);
+    // if (citied && citied.length > 0 ){
+    //   const founded_city = citied[0];
+    //   console.log(founded_city)
+    //   this.districts = founded_city.district; 
+    // }
+
 //cach 2
-    this.districts = this.vietnamData.find(data => data.city === city )?.district ||[];
+    const tim_city = this.vietnamData.find(data => {
+      return data.city === city 
+    })
+    console.log(tim_city);
+    this.districts = tim_city?.district || [];
+    debugger;
+    // this.districts = this.vietnamData.find(data => {
+    //   return data.city === city 
+    // })?.district || [];
+    console.log(this.districts );
+
+
   } 
 
 }
