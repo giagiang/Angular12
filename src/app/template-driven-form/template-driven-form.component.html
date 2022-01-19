@@ -1,0 +1,10 @@
+<p>template-driven form works!</p>
+<form (ngSubmit)="submitForm()">
+    Name: 
+    <input type="text" 
+    [(ngModel)]="name" 
+    [ngModelOptions]="{standalone: true}" />
+    <br/>
+    <!-- <button (click) = "submitForm()"> Sumbit</button> -->
+    <button>submit 2</button>
+</form>
