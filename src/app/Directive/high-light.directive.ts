@@ -9,7 +9,7 @@ export class HighLightDirective {
   constructor(private el: ElementRef) { 
   }
   ngOnInit():void{
-    console.log('ngOnint HighLightDirective', this.appHighlight);
-    this.el.nativeElement.style.color = this.appHighlight;
+    console.log('ngOnint HighLightDirective', this.appHighlight );
+    this.el.nativeElement.style.color = this.appHighlight ;
   }
 }
