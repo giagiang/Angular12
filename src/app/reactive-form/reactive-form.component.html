@@ -1,0 +1,38 @@
+<p>reactive-form works!</p>
+<form [formGroup]="formData" (ngSubmit)="onSubmit()">
+  <label for="">
+    Name: <input type="text" formControlName="name" />
+    <div *ngIf="!formData.get('name')?.valid" style="color: red">
+      Name is required
+    </div>
+  </label>
+    <br>
+    <label for=""> 
+        Age: <input type="text" formControlName="age" />
+        <div *ngIf="!formData.get('age')?.valid" style="color: red">
+          Age is required
+        </div>
+    </label>
+    <br />
+    <button type="submit" [disabled]="!formData.valid">Submit </button>
+</form>
+<!-- <p>template-driven-form works!</p>
+<form [formGroup]="formData" (ngSubmit)="onSubmit()">
+  <label>
+    Name:
+    <input type="text" formControlName="name" />
+    <div *ngIf="!formData.controls.name.valid" style="color: red">
+      Name is required
+    </div>
+  </label>
+  <br />
+  <label>
+    Age:
+    <input type="text" formControlName="age" />
+    <div *ngIf="!formData.controls.age.valid" style="color: red">
+      Age is required
+    </div>
+  </label>
+  <br />
+  <button type="submit" [disabled]="!formData.valid">Submit</button>
+</form> -->
