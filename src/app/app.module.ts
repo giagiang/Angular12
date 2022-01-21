@@ -14,6 +14,7 @@ import { HighLightDirective } from './Directive/high-light.directive';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { GetDataComponent } from './get-data/get-data.component';
+import { PostDataComponent } from './post-data/post-data.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { GetDataComponent } from './get-data/get-data.component';
     HighLightDirective,
     TemplateDrivenFormComponent,
     ReactiveFormComponent,
-    GetDataComponent
+    GetDataComponent,
+    PostDataComponent
   ],
   imports: [
     BrowserModule,
