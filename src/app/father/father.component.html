@@ -1,0 +1,9 @@
+Đây là component cha:
+<br>
+<p>{{fatherMessage}}</p>
+<br>
+<button (click) = "giveMoney()">cho con tiền</button>
+<br>
+<app-son #thangTeo name = "tèo" (sonCall)= "sonCall($event)"></app-son>
+<br>
+<app-son #thangTi name = "tí" (sonCall)= "sonCall($event)"></app-son>
